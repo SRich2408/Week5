@@ -18,13 +18,13 @@ public class Election {
 
         userInput.close();
 
-        double avgAwbrey = votesNYA + votesNJA + votesCTA;
-        double avgMartinez = votesNYM + votesNJM + votesCTM;
+        double totalAwbrey = votesNYA + votesNJA + votesCTA;
+        double totalMartinez = votesNYM + votesNJM + votesCTM;
 
-        double percAwbrey = avgAwbrey / (avgAwbrey + avgMartinez);
-        double percMartinez = avgMartinez / (avgAwbrey + avgMartinez);
+        double percentAwbrey = totalAwbrey / (totalAwbrey + totalMartinez);
+        double percentMartinez = totalMartinez / (totalAwbrey + totalMartinez);
 
-        System.out.println("Candidate\nAwbrey\nMartinez ");
+        System.out.println("Candidate   Votes    Percentage\nAwbrey      " + totalAwbrey + "    " + percentAwbrey +" %" + "\nMartinez    " + totalMartinez + "    " + percentMartinez + " %" + "\n\nTOTAL VOTES = " + (totalAwbrey + totalMartinez));
         
         
 
